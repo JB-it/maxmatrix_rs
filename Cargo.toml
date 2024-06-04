@@ -1,0 +1,12 @@
+[package]
+name = "maxmatrix_rs"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust driver for the MAX7219 LED matrix driver"
+license = "MIT"
+
+[dependencies]
+
+
+[dependencies.arduino-hal]
+git = "https://github.com/rahix/avr-hal"
