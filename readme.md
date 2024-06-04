@@ -9,5 +9,5 @@ I ported this library from the C++ version. Credits go to [riyas-org max7219 lib
 This Rust library has to be used with the [Arduino Hal](https://github.com/Rahix/avr-hal-template) for Rust.
 
 ```toml
-maxmatrix_rs = 0.1.2
+maxmatrix_rs = 0.1
 ```
