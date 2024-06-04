@@ -12,9 +12,3 @@ Add this to your Cargo.toml file:
 ```toml
 maxmatrix_rs = { git = "https://github.com/JB-it/maxmatrix_rs"}
 ```
-
-## Warning
-
-This library is still under development and will not build at the moment.
-
-I will update the readme once I figured out why..
