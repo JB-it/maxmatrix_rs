@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2021"
 description = "A Rust driver for the MAX7219 LED matrix driver"
 license = "MIT"
+homepage = "https://github.com/JB-it/maxmatrix_rs"
+repository = "https://github.com/JB-it/maxmatrix_rs"
+readme = "readme.md"
 
 [dependencies]
 
