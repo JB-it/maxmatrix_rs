@@ -1,4 +1,4 @@
-[lib]
+[package]
 name = "maxmatrix_rs"
 version = "0.1.0"
 edition = "2021"
@@ -7,6 +7,9 @@ license = "MIT"
 homepage = "https://github.com/JB-it/maxmatrix_rs"
 repository = "https://github.com/JB-it/maxmatrix_rs"
 readme = "readme.md"
+
+[lib]
+name = "maxmatrix_rs"
 path = "/src/lib.rs"
 
 [dependencies]
