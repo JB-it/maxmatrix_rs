@@ -156,6 +156,7 @@ pub mod maxmatrix {
             let _ = self.load.set_high();
         }
 
+        #[allow(dead_code, unused_variables)]
         fn write_sprite(&mut self, x: i32, y: i32, sprite: u8) {
             todo!();
         }
@@ -212,25 +213,25 @@ pub mod maxmatrix {
 
     fn shift_out<DataPin: OutputPin, ClockPin: OutputPin>(data_pin: &mut DataPin, clock_pin: &mut ClockPin, bit_order: ShiftOrder, mut val: u8)
     {
-        for i in 0..8 {
+        for _ in 0..8 {
             if bit_order == ShiftOrder::LSBFIRST {
                 if (val & 1) == 1 {
-                    data_pin.set_high();
+                    let _ = data_pin.set_high();
                 } else {
-                    data_pin.set_low();
+                    let _ = data_pin.set_low();
                 }
                 val >>= 1;
             } else {	
                 if (val & 128) != 0 {
-                    data_pin.set_high();
+                    let _ = data_pin.set_high();
                 } else {
-                    data_pin.set_low();
+                    let _ = data_pin.set_low();
                 }
                 val <<= 1;
             }
                 
-            clock_pin.set_high();
-            clock_pin.set_low();		
+            let _ = clock_pin.set_high();
+            let _ = clock_pin.set_low();		
         }
     }
 
@@ -239,14 +240,6 @@ pub mod maxmatrix {
             *value |= 1u8 << (bit);
         } else {
             *value &= !(1u8 << (bit));
-        }
-    }
-
-    fn bit_write_u16(value: &mut u16, bit: u8, bitvalue: bool) {
-        if bitvalue {
-            *value |= 1u16 << (bit);
-        } else {
-            *value &= !(1u16 << (bit));
         }
     }
 }
