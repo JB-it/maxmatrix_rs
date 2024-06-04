@@ -1,6 +1,6 @@
 [package]
 name = "maxmatrix_rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A Rust driver for the MAX7219 LED matrix driver"
 license = "MIT"
