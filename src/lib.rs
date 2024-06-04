@@ -1,3 +1,5 @@
+extern crate embedded_hal;
+
 pub mod maxmatrix {
     use embedded_hal::digital::v2::OutputPin;
 
@@ -153,7 +155,6 @@ pub mod maxmatrix {
             let _ = self.load.set_high();
         }
 
-        #[allow(dead_code, unused_variables)]
         fn write_sprite(&mut self, x: i32, y: i32, sprite: u8) {
             todo!();
         }
@@ -208,7 +209,6 @@ pub mod maxmatrix {
         MSBFIRST,
     }
 
-    #[allow(unused_must_use)]
     fn shift_out<DataPin: OutputPin, ClockPin: OutputPin>(data_pin: &mut DataPin, clock_pin: &mut ClockPin, bit_order: ShiftOrder, mut val: u8)
     {
         for i in 0..8 {
