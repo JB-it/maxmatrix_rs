@@ -8,9 +8,5 @@ homepage = "https://github.com/JB-it/maxmatrix_rs"
 repository = "https://github.com/JB-it/maxmatrix_rs"
 readme = "readme.md"
 
-[lib]
-name = "maxmatrix_rs"
-path = "/src/lib.rs"
-
 [dependencies]
 embedded-hal = "0.2.3"
