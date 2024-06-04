@@ -1,4 +1,6 @@
 mod maxmatrix {
+    use embedded_hal::digital::v2::OutputPin;
+
     pub const MAX7219_REG_NOOP: u8 = 0x00;
     pub const MAX7219_REG_DIGIT0: u8 = 0x01;
     pub const MAX7219_REG_DIGIT1: u8 = 0x02;

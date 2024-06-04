@@ -9,3 +9,4 @@ repository = "https://github.com/JB-it/maxmatrix_rs"
 readme = "readme.md"
 
 [dependencies]
+embedded-hal = "0.2.3"
