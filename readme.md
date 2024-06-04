@@ -10,5 +10,5 @@ This Rust library has to be used with the [Arduino Hal](https://github.com/Rahix
 
 Add this to your Cargo.toml file:
 ```toml
-
+maxmatrix_rs = { git = "https://github.com/JB-it/maxmatrix_rs"}
 ```
